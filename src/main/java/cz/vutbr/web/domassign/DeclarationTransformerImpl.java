@@ -1976,7 +1976,11 @@ public class DeclarationTransformerImpl implements DeclarationTransformer {
 			case TYPE:
 				// list style type
 				return genericTermIdent(ListStyleType.class, terms.get(i),
-						AVOID_INH, names.get(TYPE), properties);
+						AVOID_INH, names.get(TYPE), properties) //~usn
+//+usn+
+					|| genericTerm(TermString.class, terms.get(i), names.get(TYPE),
+							ListStyleType.string, ValueRange.ALLOW_ALL, properties, values);
+//+usn-
 			case POSITION:
 				// list style position
 				return genericTermIdent(ListStylePosition.class, terms.get(i),
