@@ -1234,10 +1234,8 @@ public interface CSSProperty {
 				"upper-roman"), LOWER_GREEK("lower-greek"), LOWER_LATIN(
 				"lower-latin"), UPPER_LATN("upper-latin"), ARMENIAN("armenian"), GEORGIAN(
 				"georgian"), LOWER_ALPHA("lower-alpha"), UPPER_ALPHA(
-				"upper-alpha"), NONE("none"), INHERIT("inherit"), //~usn
-//+usn+
+				"upper-alpha"), NONE("none"), INHERIT("inherit"),
 				string("");
-//+usn-
 
 		private String text;
 

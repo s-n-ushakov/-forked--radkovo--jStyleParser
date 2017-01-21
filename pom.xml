@@ -12,7 +12,7 @@
 
 	<groupId>net.sf.cssbox</groupId>
 	<artifactId>jstyleparser</artifactId>
-	<version>2.1-usn-20170121</version>
+	<version>2.1-usn-20170121-upstream</version>
 	<name>jStyleParser</name>
 	<description>jStyleParser is a CSS parser written in Java. It has its own application interface that is designed to allow an efficient CSS processing in Java and mapping the values to the Java data types. It parses CSS 2.1 style sheets into structures that can be efficiently assigned to DOM elements. It is intended be the primary CSS parser for the CSSBox library. While handling errors, it is user agent conforming according to the CSS specification.</description>
 	<url>http://cssbox.sourceforge.net/jstyleparser</url>
@@ -184,12 +184,10 @@
 						</goals>
 						<configuration>
 							<show>protected</show>
-<!-- +usn+ -->
 							<!-- A workaround for Javadoc errors under Java 8, part 1
 							     see http://stackoverflow.com/questions/15886209/maven-is-not-working-in-java-8-when-javadoc-tags-are-incomplete#26806103
 							     -->
 							<additionalparam>${javadoc.opts}</additionalparam>
-<!-- +usn- -->
 						</configuration>
 					</execution>
 				</executions>
@@ -345,7 +343,6 @@
 				</plugins>
 			</build>
 		</profile>
-<!-- +usn+ -->
 		<!-- A workaround for Javadoc errors under Java 8, part 2
 		     see http://stackoverflow.com/questions/15886209/maven-is-not-working-in-java-8-when-javadoc-tags-are-incomplete#26806103
 		     -->
@@ -358,7 +355,6 @@
 				<javadoc.opts>-Xdoclint:none</javadoc.opts>
 			</properties>
 		</profile>
-<!-- +usn- -->
 	</profiles>
 
 	<distributionManagement>
